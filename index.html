@@ -13,6 +13,10 @@
   img { max-width: 100%; }
   * { box-sizing: border-box; }
   button { font-family: inherit; appearance: none; -webkit-appearance: none; }
+  @keyframes arrowNudge {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(4px); }
+  }
   @keyframes arrowBounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(4px); }
@@ -50,10 +54,10 @@
         <span style="flex: 1; font-family: Inter, sans-serif; font-size: 7.5px; font-weight: 500; letter-spacing: 0.06em; line-height: 1.6; text-transform: uppercase; text-align: center; color: rgba(244,239,230,0.75);">Saúde da<br>coluna</span>
       </div>
 
-      <button style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; margin-top: 42px; padding: 16px 20px; border: 1px solid rgba(244,239,230,0.12); border-radius: 999px; background: rgba(244,239,230,0.04); font-family: Sora, sans-serif; font-size: 14px; font-weight: 600; color: #f4efe6; cursor: pointer; text-align: center;">
-        Alguns links úteis
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1683a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; animation: arrowBounce 1.8s ease-in-out infinite;"><path d="M6 9l6 6 6-6"></path></svg>
-      </button>
+      <a href="https://wa.me/5547991565775?text=Ol%C3%A1%2C%20Airton%21%20Vim%20pela%20sua%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; margin-top: 42px; padding: 16px 20px; border: 1px solid rgba(244,239,230,0.12); border-radius: 999px; background: rgba(244,239,230,0.04); font-family: Sora, sans-serif; font-size: 14px; font-weight: 600; color: #f4efe6; cursor: pointer; text-align: center; text-decoration: none; box-sizing: border-box;">
+        Clique e fale comigo
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1683a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; animation: arrowNudge 1.8s ease-in-out infinite;"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+      </a>
     </div>
 
     <div style="padding: 20px 24px 12px; display: flex; flex-direction: column; gap: 14px;">
