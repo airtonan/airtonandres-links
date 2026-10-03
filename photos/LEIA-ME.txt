@@ -1,0 +1,19 @@
+Coloque aqui as fotos da página (index.html). Nome do arquivo = o "src" de
+cada <img> no HTML:
+
+  hero.png        — foto de capa (retrato, vertical, proporção 4:5 — 1086×1358px)
+  agendar.jpg     — card "Agende sua avaliação"    — 1200×600px (16:8)
+  area-aluno.jpg  — card "Área do aluno"            — 1200×600px (16:8)
+  whatsapp.jpg    — card "Fale comigo"              — 1200×600px (16:8)
+  metodo.jpg      — card "Conheça o método"         — 1200×600px (16:8)
+
+Os cards são retângulos largos (proporção 2:1 — pode entregar em qualquer
+tamanho nessa proporção, ex. 800×400 ou 1600×800; 1200×600 é um bom
+equilíbrio entre nitidez e peso do arquivo) com o texto sobreposto do lado
+esquerdo — escolha fotos com espaço/fundo mais neutro à esquerda pra não
+brigar com o texto. Pode usar .png no lugar de .jpg, só trocar a extensão
+no "src" do index.html.
+
+Foto que ainda não existe não quebra a página: a capa cai num monograma
+"AA" discreto e os cards ficam com fundo escuro liso, com o texto normal
+por cima — dá pra publicar mesmo sem todas as fotos prontas.

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airton Andres — Links</title>
+<meta name="description" content="Agende sua avaliação, acesse a área do aluno e fale comigo pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0c0b0a;
+    --paper: #f4efe6;
+    --gold: #1683a3;
+    --gold-soft: #1683a3;
+    --btn-grad-start: #3292ae;
+    --btn-grad-end: #1683a3;
+    --hairline: rgba(244, 239, 230, 0.12);
+  }
+
+  * { box-sizing: border-box; }
+
+  button { font-family: inherit; appearance: none; -webkit-appearance: none; }
+
+  html, body {
+    margin: 0;
+    min-height: 100%;
+    background: var(--bg);
+  }
+
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    color: var(--paper);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ---------- Capa ---------- */
+
+  .hero {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 0.87;
+    overflow: hidden;
+    background: var(--bg);
+  }
+
+  .hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    z-index: 1;
+  }
+
+  .hero-monogram {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(120% 90% at 50% 15%, rgba(22, 131, 163, 0.2), transparent 60%);
+  }
+  .hero-monogram span {
+    font-family: "Sora", sans-serif;
+    font-size: 88px;
+    font-weight: 700;
+    color: rgba(244, 239, 230, 0.14);
+    letter-spacing: 2px;
+  }
+
+  .hero-scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+      linear-gradient(0deg, var(--bg) 0%, rgba(12, 11, 10, 0.92) 12%, rgba(12, 11, 10, 0.55) 25%, transparent 40%),
+      linear-gradient(90deg, var(--bg) 0%, transparent 32%, transparent 52%, var(--bg) 100%);
+  }
+
+  /* ---------- Saudação casual ---------- */
+
+  .greeting {
+    position: relative;
+    z-index: 3;
+    margin-top: -70px;
+    padding: 0 28px 6px;
+    text-align: left;
+  }
+
+  .greeting-badge {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    font-family: "Inter", sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--gold-soft);
+  }
+
+  .greeting-title {
+    margin: 18px 0 0;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--paper);
+  }
+
+  .greeting-title .highlight {
+    font-weight: 700;
+    color: var(--gold-soft);
+  }
+
+  .greeting-title strong {
+    font-weight: 700;
+    color: var(--paper);
+  }
+
+  .greeting-sub {
+    margin: 16px auto 0;
+    max-width: 290px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.005em;
+    text-align: center;
+    color: rgba(244, 239, 230, 0.7);
+  }
+
+  .greeting-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 22px 0 0;
+  }
+
+  .greeting-tag {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 999px;
+    font-family: "Sora", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--btn-grad-start), var(--btn-grad-end));
+    box-shadow: 0 3px 12px rgba(22, 131, 163, 0.3);
+    white-space: nowrap;
+  }
+
+  .greeting-sub strong {
+    font-weight: 600;
+    color: var(--paper);
+  }
+
+  .greeting-swipe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: 28px;
+    padding: 14px 20px;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    background: rgba(244, 239, 230, 0.04);
+    font-family: "Sora", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--paper);
+    cursor: pointer;
+    text-align: left;
+  }
+  .greeting-swipe svg {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    color: var(--gold-soft);
+    animation: intro-arrow-bounce 1.8s ease-in-out infinite;
+  }
+
+  @keyframes intro-arrow-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(3px); }
+  }
+
+  .greeting-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .greeting-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    object-fit: cover;
+    object-position: top center;
+    flex-shrink: 0;
+    background: var(--bg);
+  }
+  .greeting-profile-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.35;
+  }
+  .greeting-profile-info strong {
+    font-family: "Sora", sans-serif;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--paper);
+  }
+  .greeting-profile-info small {
+    font-size: 10.5px;
+    color: rgba(244, 239, 230, 0.5);
+  }
+  .greeting-badge-check {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    border: 1.5px solid var(--gold-soft);
+    background: none;
+    color: var(--gold-soft);
+  }
+  .greeting-badge-check svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* ---------- Cards de link ---------- */
+
+  .links {
+    padding: 20px 28px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .card {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 1.981;
+    background:
+      linear-gradient(155deg, #1a1712 0%, #0c0b0a 70%);
+    border: 1px solid var(--hairline);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--gold-soft); }
+  .card:active { transform: scale(0.99); }
+
+  .card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(6, 5, 5, 0.78) 0%, rgba(6, 5, 5, 0.25) 55%, rgba(6, 5, 5, 0.05) 100%);
+  }
+
+  .card-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 22px;
+    max-width: 78%;
+  }
+
+  .card-text strong {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.2;
+    color: var(--paper);
+  }
+
+  .card-text small {
+    margin-top: 6px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-soft);
+  }
+
+  /* cards com arte pronta (texto/botão/moldura já desenhados na própria
+     imagem): some com a legenda e a moldura em HTML — fica só a imagem.
+     Sem a imagem (ainda não colocada ou falhou), volta o visual padrão
+     com borda, fundo e texto, pra página nunca ficar quebrada. */
+  .card--designed {
+    border-color: transparent;
+    background: none;
+  }
+  .card--designed:not(.img-missing):hover {
+    border-color: transparent;
+  }
+  .card--designed .card-scrim,
+  .card--designed .card-text {
+    display: none;
+  }
+  .card--designed.img-missing {
+    border-color: var(--hairline);
+    background: linear-gradient(155deg, #1a1712 0%, #0c0b0a 70%);
+  }
+  .card--designed.img-missing .card-scrim {
+    display: block;
+  }
+  .card--designed.img-missing .card-text {
+    display: flex;
+  }
+
+  /* ---------- Rodapé ---------- */
+
+  footer {
+    padding: 28px 28px 48px;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: rgba(244, 239, 230, 0.3);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <img src="photos/hero.png" alt="Airton Andres" onerror="this.style.display='none'">
+      <div class="hero-monogram" aria-hidden="true"><span>AA</span></div>
+      <div class="hero-scrim"></div>
+    </div>
+
+    <div class="greeting">
+      <div class="greeting-profile">
+        <img class="greeting-avatar" src="photos/avatar.png" alt="" onerror="this.style.display='none'">
+        <div class="greeting-profile-info">
+          <strong>Airton Andres</strong>
+          <small>@oairtonandres</small>
+        </div>
+        <span class="greeting-badge-check" title="Perfil verificado">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </span>
+      </div>
+
+      <span class="greeting-badge">Encontre tudo sobre mim</span>
+      <h2 class="greeting-title">Opa, tudo bem?<br>Muito prazer, <span class="highlight">aqui</span> é o <strong>Airton</strong>.</h2>
+      <p class="greeting-sub">Profissional de Educação Física especializado em exercício aplicado à saúde e reabilitação da coluna.</p>
+      <div class="greeting-tags">
+        <span class="greeting-tag">9 anos de experiência</span>
+        <span class="greeting-tag">Reabilitação</span>
+        <span class="greeting-tag">Força &amp; performance</span>
+        <span class="greeting-tag">Saúde da coluna</span>
+      </div>
+
+      <button class="greeting-swipe" type="button" aria-label="Deslize para baixo e saiba mais">
+        Deslize para baixo e saiba mais
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+    </div>
+
+    <div class="links">
+      <a class="card card--designed" href="https://wa.me/5547991565775" target="_blank" rel="noopener noreferrer">
+        <img src="photos/agendar.jpg" alt="Agende sua avaliação" onerror="this.style.display='none'; this.closest('.card').classList.add('img-missing')">
+        <div class="card-scrim"></div>
+        <div class="card-text">
+          <strong>Agende sua avaliação</strong>
+          <small>Vamos falar sobre o seu caso</small>
+        </div>
+      </a>
+
+      <a class="card card--designed" href="https://app.airtonandres.com.br/entrar" target="_blank" rel="noopener noreferrer">
+        <img src="photos/area-aluno.jpg" alt="Área do aluno" onerror="this.style.display='none'; this.closest('.card').classList.add('img-missing')">
+        <div class="card-scrim"></div>
+        <div class="card-text">
+          <strong>Área do aluno</strong>
+          <small>Já é aluno? Entre por aqui</small>
+        </div>
+      </a>
+
+      <a class="card card--designed" href="https://wa.me/5547991565775" target="_blank" rel="noopener noreferrer">
+        <img src="photos/whatsapp.jpg" alt="Fale comigo pelo WhatsApp" onerror="this.style.display='none'; this.closest('.card').classList.add('img-missing')">
+        <div class="card-scrim"></div>
+        <div class="card-text">
+          <strong>Fale comigo</strong>
+          <small>Tire suas dúvidas no WhatsApp</small>
+        </div>
+      </a>
+
+      <a class="card card--designed" href="#" target="_blank" rel="noopener noreferrer">
+        <img src="photos/metodo.jpg" alt="Conheça o método" onerror="this.style.display='none'; this.closest('.card').classList.add('img-missing')">
+        <div class="card-scrim"></div>
+        <div class="card-text">
+          <strong>Conheça o método</strong>
+          <small>Reabilitação, semana após semana</small>
+        </div>
+      </a>
+    </div>
+
+    <footer>© <span id="year"></span> AIRTON ANDRES</footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
